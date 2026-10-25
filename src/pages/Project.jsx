@@ -19,7 +19,8 @@ const projects = [
     tech: ["React Native", "Expo", "AsyncStorage"],
     status: "COMPLETED",
     type: "mobile",
-    downloadLink: "/application-219c65c2-970f-4cc5-90cf-c6309f71d6e3.apk",
+    downloadLink:
+      "/application-219c65c2-970f-4cc5-90cf-c6309f71d6e3.apk",
     githubLink: "",
     liveLink: "",
   },
@@ -29,7 +30,7 @@ const projects = [
     description:
       "A modern and responsive PVC panel website featuring product categories, attractive product showcases and a clean user interface.",
     tech: ["React.js", "JavaScript", "CSS"],
-    status: "IN PROGRESS",
+    status: "COMPLETED",
     type: "web",
     downloadLink: "",
     githubLink: "",
@@ -39,7 +40,7 @@ const projects = [
     title: "ChatSphere",
     category: "FULL STACK DEVELOPMENT",
     description:
-      "A real-time chat application concept designed to connect users through instant messaging with a modern interface.",
+      "A real-time chat application designed to connect users through instant messaging with a modern interface.",
     tech: ["React.js", "Node.js", "Express.js", "Socket.IO", "MongoDB"],
     status: "IN PROGRESS",
     type: "web",
@@ -73,7 +74,7 @@ function Project() {
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
             >
               <div className="project-top">
@@ -120,6 +121,7 @@ function Project() {
                   >
                     <Download size={16} />
                     Download APK
+                    <ArrowUpRight size={15} />
                   </a>
                 )}
 
