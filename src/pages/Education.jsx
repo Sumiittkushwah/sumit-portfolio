@@ -31,7 +31,7 @@ function Education() {
 
             <h2>Bachelor of Computer Applications (BCA)</h2>
 
-            <h3>Uttam Group of Institutions</h3>
+            <h3>Agra Public Group Of Institutions</h3>
 
             <div className="education-details">
               <span>
